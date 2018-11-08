@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+
+spring:
+  datasource: #数据库连接信息
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/appinfodb
+    username: root
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
+  mvc:
+    view: #视图解析器
+      prefix: /
+      suffix: .jsp
+
+#指定mapping文件地址
+mybatis:
+  mapper-locations: classpath:com/ybw/appsys/mapping/*.xml #扫描mapper文件
+  type-aliases-package: com.ybw.appsys.pojo #别名设置
+  configuration:
+    auto-mapping-behavior: full
