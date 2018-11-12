@@ -1,5 +1,7 @@
 server:
-  port: 8080
+  port: 8080 #访问端口
+#  servlet:
+#    context-path: /AppSys #访问路径 
 
 
 spring:
@@ -13,6 +15,8 @@ spring:
     view: #视图解析器
       prefix: /
       suffix: .jsp
+  application:
+    name: AppSys
 
 #指定mapping文件地址
 mybatis:
