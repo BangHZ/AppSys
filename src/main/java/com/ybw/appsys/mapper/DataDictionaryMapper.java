@@ -3,7 +3,6 @@ package com.ybw.appsys.mapper;
 import com.ybw.appsys.pojo.DataDictionary;
 import org.apache.ibatis.annotations.Param;
 
-import javax.xml.crypto.Data;
 import java.util.List;
 
 public interface DataDictionaryMapper {

@@ -18,5 +18,5 @@ spring:
 mybatis:
   mapper-locations: classpath:com/ybw/appsys/mapping/*.xml #扫描mapper文件
   type-aliases-package: com.ybw.appsys.pojo #别名设置
-  configuration:
+  configuration: 
     auto-mapping-behavior: full
