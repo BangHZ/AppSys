@@ -16,6 +16,6 @@ public class GlobalExceptionHandler  {
     @ExceptionHandler(Exception.class)
     public String handleException(Exception e, HttpServletResponse response){
 //        System.out.println(response.getStatus());
-        return "403";
+        return "error/error_500";
     }
 }
