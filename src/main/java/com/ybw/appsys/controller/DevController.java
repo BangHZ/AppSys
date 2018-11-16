@@ -327,5 +327,16 @@ public class DevController {
 		return "jsp/developer/appinfomodify";
 	}
 	
+	@RequestMapping("/appinfomodifysave")
+	public String doAppInfoModifySave(AppInfo appinfo, HttpSession session) {
+		// 获取用户信息
+		DevUser user = (DevUser)session.getAttribute("devUserSession");
+		// 补全pojo信息
+		appinfo.setCreationdate(new Date());
+		appinfo.setModifyby(user.getId());
+		
+		return "";
+	}
+	
 
 }
