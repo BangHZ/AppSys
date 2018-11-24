@@ -20,3 +20,8 @@ mybatis:
   type-aliases-package: com.ybw.appsys.pojo #别名设置
   configuration:
     auto-mapping-behavior: full
+
+#集成spring task定时器
+testTask:
+  doTask:
+    cron: 0 6 20 ? * *
