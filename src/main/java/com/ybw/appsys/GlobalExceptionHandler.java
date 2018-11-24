@@ -1,10 +1,7 @@
 package com.ybw.appsys;
 
-import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.ResponseStatus;
 
 import javax.servlet.http.HttpServletResponse;
 
@@ -19,6 +16,6 @@ public class GlobalExceptionHandler  {
     @ExceptionHandler(Exception.class)
     public String handleException(Exception e, HttpServletResponse response){
 //        System.out.println(response.getStatus());
-        return "403";
+        return "error/error_500";
     }
 }
